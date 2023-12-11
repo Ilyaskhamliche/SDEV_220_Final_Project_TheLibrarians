@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox 
-
+import pandas as pd
 class BookManager:
     def __init__(self, master):
         self.master = master
@@ -26,7 +26,6 @@ class BookManager:
         self.button_update = tk.Button(master, text="Update Book", command=self.update_book)
         self.button_delete = tk.Button(master, text="Delete Book", command=self.delete_book)
         self.button_add = tk.Button(master, text="Add Phone Number", command=self.add_PhoneNum)
-        # self.button_delete = tk.Button(master, text="Delete Phone Number", command=self.delete_PhoneNum)
     
         # layout of the Gui
         
@@ -41,9 +40,9 @@ class BookManager:
         self.entry_publisher.grid(row=2, column=1)
         self.entry_PhoneNum.grid(row=3, column=1)
 
-        self.button_add.grid(row=3, column=0, columnspan=2, pady=10)
-        self.button_update.grid(row=4, column=0, columnspan=2, pady=10)
-        self.button_delete.grid(row=5, column=0, columnspan=2, pady=10) #number of vertical spaces
+        self.button_add.grid(row=6, column=0, columnspan=2, pady=10)
+        self.button_update.grid(row=7, column=0, columnspan=2, pady=10)
+        self.button_delete.grid(row=8, column=0, columnspan=2, pady=10) #number of vertical spaces
         
         
     def add_book(self):
@@ -93,4 +92,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = BookManager(root)
     root.mainloop()    
-
