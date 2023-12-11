@@ -26,7 +26,7 @@ class BookManager:
         self.button_update = tk.Button(master, text="Update Book", command=self.update_book)
         self.button_delete = tk.Button(master, text="Delete Book", command=self.delete_book)
         self.button_add = tk.Button(master, text="Add Phone Number", command=self.add_PhoneNum)
-        # self.button_delete = tk.Button(master, text="Delete Phone Number", command=self.delete_PhoneNum)
+        self.button_delete = tk.Button(master, text="Delete Phone Number", command=self.delete_PhoneNum)
     
         # layout of the Gui
         
